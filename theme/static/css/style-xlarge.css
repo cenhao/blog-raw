@@ -1,0 +1,43 @@
+/*
+	Strata by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/* Basic */
+
+	body, input, select, textarea {
+		font-size: 12pt;
+	}
+
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+
+	#nav
+	{
+	}
+
+		#nav a:hover
+		{
+			background: #383838;
+		}
+		
+		#nav a:active
+		{
+			background: #484848;
+		}
+	
+		#nav a
+		{
+			padding: 0.2em 1em 0.2em 1em;
+			margin: 0.6em 0.2em 0.6em 0.2em;
+			font-weight: 600;
+			border-radius: 8px;
+			-moz-transition: background-color .2s ease-in-out;
+			-webkit-transition: background-color .2s ease-in-out;
+			-o-transition: background-color .2s ease-in-out;
+			-ms-transition: background-color .2s ease-in-out;
+			transition: background-color .2s ease-in-out;
+			color: #fff;
+		}

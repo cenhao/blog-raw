@@ -1,0 +1,63 @@
+doctype html
+// Strata by HTML5 UP
+// html5up.net | @n33co
+// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+// Edit by Hao
+html(lang="#{DEFAULT_LANG}")
+  head
+    block head
+      title
+        block title
+          = SITENAME
+      meta(http-equiv="content-type" content="text/html; charset=utf-8")
+      script(src="/js/jquery.min.js")
+      script(src="/js/jquery.poptrox.min.js")
+      script(src="/js/skel.min.js")
+      script(src="/js/init.js")
+      noscript
+        link(rel="stylesheet" href="/css/skel.css")
+        link(rel="stylesheet" href="/css/style.css")
+        link(rel="stylesheet" href="/css/style-xlarge.css")
+
+  body#top
+    div
+      nav#nav
+        ul.container
+          for cat, null in categories
+            if cat == category
+              li.active
+                a(href="#{SITEURL}/#{cat.url}")= cat
+            else
+              li
+                a(href="#{SITEURL}/#{cat.url}")= cat
+    //- header
+    header#header
+      a.image.avatar(href="#")
+        img(src="/images/me.jpg" alt="")
+      h1
+        strong I'm Hao
+        | , a fan of programming.
+        br
+        | Welcome to my blog,
+        br
+        | where I keep my ideas and thoughts.
+        br
+
+    #main
+      block content
+
+      //- footer
+    footer#footer
+      ul.icons
+        li
+          a.icon.fa-linkedin(href="http://www.linkedin.com/pub/hao-cen/80/bbb/91a")
+            span.label Linkedin
+        li
+          a.icon.fa-github(href="https://github.com/cenhao")
+            span.label Github
+      ul.copyright
+        li &copy; Hao Cen
+        li Design: 
+          a(href="http://html5up.net") HTML5 UP
+        li Powered by: 
+          a(href="http://blog.getpelican.com") Pelican
