@@ -32,6 +32,8 @@ ifeq ($(DEBUG), 1)
 	PELICANOPTS += -D
 endif
 
+SHELL := /bin/bash
+
 help:
 	@echo 'Makefile for a pelican Web site                                        '
 	@echo '                                                                       '
@@ -54,6 +56,14 @@ help:
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html'
 	@echo '                                                                       '
 
+test:
+	for file in $$(find ./theme/jade/ -name '*.jade'); do\
+		echo $$file;\
+		filename=$$(basename $$file);\
+		name=$$(echo $${filename} | cut -d'.' -f1);\
+		pyjade -c jinja $$file > ./theme/templates/$${name}.html;\
+		echo $${name}.html;\
+	done
 html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 

@@ -1313,6 +1313,11 @@
 				border-top: solid 0.6em #282828;
 			}
 
+.paginator {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
 
 /* 
  *   Darkly Pygments Theme

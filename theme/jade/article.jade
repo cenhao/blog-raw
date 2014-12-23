@@ -1,6 +1,5 @@
-extends base.thml
+extends base.html
 block head
-  | {{ suerp() }}
+  | {{ super() }}
   for keyword in article.keyword
     meta(name="keywords" contents="#{keyword})
-  for description

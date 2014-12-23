@@ -1,0 +1,7 @@
+if DEFAULT_PAGINATION
+  p.paginator
+    if articles_page.has_previous()
+      a.icon.fa-arrow-circle-left(href="#{SITEURL}/#{articles_previous_page.url}")
+    | Page #{articles_page.number} / #{articles_paginator.num_pages}
+    if articles_page.has_next()
+      a.icon.fa-arrow-circle-right(href="#{SITEURL}/#{articles_next_page.url}")
