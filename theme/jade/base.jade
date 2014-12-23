@@ -23,6 +23,8 @@ html(lang="#{DEFAULT_LANG}")
     div
       nav#nav
         ul.container
+          li
+            a(href="#{SITEURL}/") Home
           for cat, null in categories
             if cat == category
               li.active

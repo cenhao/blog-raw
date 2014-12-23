@@ -1,0 +1,6 @@
+extends base.thml
+block head
+  | {{ suerp() }}
+  for keyword in article.keyword
+    meta(name="keywords" contents="#{keyword})
+  for description
