@@ -10,14 +10,13 @@ html(lang="#{DEFAULT_LANG}")
         block title
           = SITENAME
       meta(http-equiv="content-type" content="text/html; charset=utf-8")
-      script(src="/js/jquery.min.js")
-      script(src="/js/jquery.poptrox.min.js")
-      script(src="/js/skel.min.js")
-      script(src="/js/init.js")
-      noscript
-        link(rel="stylesheet" href="/css/skel.css")
-        link(rel="stylesheet" href="/css/style.css")
-        link(rel="stylesheet" href="/css/style-xlarge.css")
+      script(src="#{SITEURL}/js/jquery.min.js")
+      script(src="#{SITEURL}/js/jquery.poptrox.min.js")
+      script(src="#{SITEURL}/js/skel.min.js")
+      script(src="#{SITEURL}/js/init.js")
+      link(rel="stylesheet" href="#{SITEURL}/css/skel.css")
+      link(rel="stylesheet" href="#{SITEURL}/css/style.css")
+      link(rel="stylesheet" href="#{SITEURL}/css/style-xlarge.css")
 
   body#top
     div
