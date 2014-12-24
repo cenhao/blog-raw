@@ -1,0 +1,13 @@
+extends base.html
+block title
+  | #{SITENAME} - Tags
+block content
+  h3.group-info
+    i.fa.fa-tags
+    |  Tags
+  section
+  ul
+    for tag, articles in tags|sort
+      li.list
+        a(href="#{SITEURL}/#{tag.url}")= tag
+        | (#{articles|count})

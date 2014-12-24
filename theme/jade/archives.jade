@@ -1,0 +1,16 @@
+extends base.html
+block title
+  | #{SITENAME} - Archives
+block content
+  h3.group-info
+    i.fa.fa-archive
+    |  Archives
+  section
+  dl
+    | {% set last_date = None %}
+    for article in dates
+      if article.locale_date != last_date
+        dt= article.locale_date
+        | {% set last_date = article.locale_date %}
+      dd
+        a(href="#{SITEURL}/{article.url}")= article.title

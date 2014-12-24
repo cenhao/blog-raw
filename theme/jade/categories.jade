@@ -1,6 +1,12 @@
 extends base.html
+block title
+  | #{SITENAME} - Categories
 block content
+  h3.group-info
+    i.fa.fa-book
+    |  Categories
+  section
   ul
     for category, articles in categories
-      li
+      li.list
         a(href="#{SITEURL}/#{category.url}")= category
