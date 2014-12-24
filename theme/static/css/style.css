@@ -1,5 +1,4 @@
 @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
-/*@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");*/
 @import url("http://fonts.googleapis.com/css?family=Ubuntu+Mono");
 @font-face {
 	font-family: Nexa;
@@ -154,6 +153,13 @@
 		color: rgba(69, 69, 69, 0.4);
 		float: right;
 		font-size: 0.8em;
+	}
+
+	.article-info {
+		font-size: 0.8em;
+		line-height: 5%;
+		margin: 1em 0 0 0;
+		padding: 0;
 	}
 
 	pre {
@@ -1361,3 +1367,34 @@
 .highlight .il { color: #8ae234; }
 .highlight .o { color: #989DAA; }
 .highlight .nv,.highlight .vc,.highlight .vg,.highlight .vi { color: #fff; }
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+
+	#nav
+	{
+	}
+
+		#nav a:hover
+		{
+			background: #383838;
+		}
+		
+		#nav a:active
+		{
+			background: #484848;
+		}
+	
+		#nav a
+		{
+			padding: 0.2em 1em 0.2em 1em;
+			margin: 0.6em 0.2em 0.6em 0.2em;
+			font-weight: 600;
+			border-radius: 8px;
+			-moz-transition: background-color .2s ease-in-out;
+			-webkit-transition: background-color .2s ease-in-out;
+			-o-transition: background-color .2s ease-in-out;
+			-ms-transition: background-color .2s ease-in-out;
+			transition: background-color .2s ease-in-out;
+			color: #fff;
+		}

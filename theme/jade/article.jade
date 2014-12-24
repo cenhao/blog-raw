@@ -1,5 +1,38 @@
 extends base.html
 block head
   | {{ super() }}
-  for keyword in article.keyword
-    meta(name="keywords" contents="#{keyword})
+  for keyword in article.keywords
+    meta(name="keywords" contents="#{keyword})")
+  for description in article.description
+    meta(name="description" contents="#{keyword}")
+
+block content
+  section
+    header.major
+      h2= article.title
+    p.time #{article.locale_date}
+    br
+    br
+    #{article.content}
+    br
+    div
+      p.article-info
+        | Pulished in 
+        a(href="#{SITEURL}/category/#{category}.html")= category
+      p.article-info
+        | Tags: 
+        for tag in article.tags
+          a(href="#{SITEURL}/tags/#{tag}.html")= tag
+          |  
+  section
+    div#disqus_thread
+    script(type="text/javascript").
+      var disqus_shortname = 'cenhaosblog';
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    noscript
+      | Please enable JavaScript to view the 
+      a(href="http://disqus.com/?ref_noscript") comments powered by Disqus.
