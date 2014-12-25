@@ -35,7 +35,7 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after {
 }
 
 body, input, select, textarea {
-	color: #a2a2a2;
+	color: #6b5353;
 	font-family: "Nexa", Helvetica, sans-serif;
 	font-size: 16pt;
 	font-weight: 400;
