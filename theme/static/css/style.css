@@ -157,7 +157,7 @@
 
 	.article-info {
 		font-size: 0.8em;
-		line-height: 5%;
+		line-height: 0.5em;
 		margin: 1em 0 0 0;
 		padding: 0;
 	}
@@ -1349,11 +1349,11 @@
 	padding: 20px; 
 	background: #343642;
 	color: #C1C2C3;
+	line-height: 1em;
 }
 .highlight span {
 	font-family: "Ubuntu Mono", "Andale Mono", monospace;
 	font-size: medium;
-	line-height: 0.0;
 }
 .highlight .hll { background-color: #ffc; }
 .highlight .gd { color: #2e3436; background-color: #0e1416; }
