@@ -31,6 +31,9 @@ html(lang="#{DEFAULT_LANG}")
             else
               li
                 a(href="#{SITEURL}/#{cat.url}")= cat
+          for p in PAGES
+            li
+              a(href="#{SITEURL}/#{p.url}")= p.title
     //- header
     header#header
       a.image.avatar(href="#")

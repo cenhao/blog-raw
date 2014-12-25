@@ -4,6 +4,10 @@
 	font-family: Nexa;
 	src: url("/fonts/Nexa Light.otf");
 }
+@font-face {
+	font-family: Nexa-Bold;
+	src: url("/fonts/Nexa Bold.otf");
+}
 
 /*
 	Strata by HTML5 UP
@@ -57,7 +61,7 @@
 
 	strong, b {
 		color: #787878;
-		font-weight: 400;
+		font-family: "Nexa-Bold", Helvetica, sans-serif;
 	}
 
 	em, i {
