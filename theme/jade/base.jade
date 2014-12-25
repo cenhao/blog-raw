@@ -14,9 +14,10 @@ html(lang="#{DEFAULT_LANG}")
       script(src="#{SITEURL}/js/jquery.poptrox.min.js")
       script(src="#{SITEURL}/js/skel.min.js")
       script(src="#{SITEURL}/js/init.js")
-      link(rel="stylesheet" href="#{SITEURL}/css/skel.css")
-      link(rel="stylesheet" href="#{SITEURL}/css/style.css")
-      link(rel="stylesheet" href="#{SITEURL}/css/style-xlarge.css")
+      noscript
+        link(rel="stylesheet" href="#{SITEURL}/css/skel.css")
+        link(rel="stylesheet" href="#{SITEURL}/css/style.css")
+        link(rel="stylesheet" href="#{SITEURL}/css/style-xlarge.css")
 
   body#top
     div
