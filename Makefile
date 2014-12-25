@@ -56,7 +56,7 @@ help:
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html'
 	@echo '                                                                       '
 
-test:
+temp:
 	for file in $$(find ./theme/jade/ -name '*.jade'); do\
 		echo $$file;\
 		filename=$$(basename $$file);\
