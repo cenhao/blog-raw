@@ -24,7 +24,7 @@ html(lang="#{DEFAULT_LANG}")
       nav#nav
         ul.container
           li
-            a(href="#{SITEURL}/") Home
+            a.fa.fa-code(href="#{SITEURL}/")
           for cat, null in categories
             li
               a(href="#{SITEURL}/#{cat.url}")= cat
