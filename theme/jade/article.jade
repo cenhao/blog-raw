@@ -17,13 +17,19 @@ block content
     br
     div
       p.article-info
-        | Pulished in 
+        | [ 
+        a(href="#{SITEURL}/categories.html") Category
+        |  ]: 
         a(href="#{SITEURL}/category/#{category}.html")= category
       p.article-info
-        | Tags: 
-        for tag in article.tags
-          a(href="#{SITEURL}/tag/#{tag}.html")= tag
-          |  
+        | [ 
+        a(href="#{SITEURL}/tags.html") Tags
+        |  ]
+        if article.tags:
+          | : 
+          for tag in article.tags
+            a(href="#{SITEURL}/tag/#{tag}.html")= tag
+            |  
   section
     div#disqus_thread
     script(type="text/javascript").

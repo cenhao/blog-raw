@@ -26,12 +26,10 @@ html(lang="#{DEFAULT_LANG}")
           li
             a(href="#{SITEURL}/") Home
           for cat, null in categories
-            if cat == category
-              li.active
-                a(href="#{SITEURL}/#{cat.url}")= cat
-            else
-              li
-                a(href="#{SITEURL}/#{cat.url}")= cat
+            li
+              a(href="#{SITEURL}/#{cat.url}")= cat
+          li
+            a(href="#{SITEURL}/archives.html") Archives
           for p in PAGES
             li
               a(href="#{SITEURL}/#{p.url}")= p.title
