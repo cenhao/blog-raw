@@ -2,7 +2,7 @@ Title: New Year Resolution
 Slug: new-year-resolution
 Tags: blog
 
-As the new year is coming, it's time to make a new year resolution(as always). But the different this time is that I'm going to write down a blog on it.
+As the new year is coming, it's time to make a new year resolution(as always). But the difference this time is that I'm going to write down a blog on it.
 
 Usually the resolution would be a little bit beyond the ablity, a little bit unrealistic. But by making a higher expectation to myself, it would be more possible to achieve a higher goal.
 
