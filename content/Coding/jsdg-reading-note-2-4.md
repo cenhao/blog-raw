@@ -37,6 +37,11 @@ Slug: js-definite-guide-ch-2-4
 22. JavaScript object are a collection of porperties. For primative types, `number`, `string` & `boolean`, by design they're converted into corresponding wrapper object so that they have porperties and methods. [3.6]
 23. There's no wrapper object for `null` and `undefined`. [3.6]
 24. The properties of primitive type variable are only readable. Attempt to set the properties will be silently ignored, as the properties belongs to the underlying temporary warpper object. [3.6]
+25. Primitives are immutable and are compared by **value**. Objects are mutable and are compared by references, i.e., two objects are the same iff they're refering to the same object. [3.7]
+26. Assigning a object to a variable is assiging the reference of the object to the variable. [3.7]
+27. Conversion within operation between `Number` and `String`: if it's a numberic operator, `String` will be converted into `Number`, otherwise `Number` will be converted into `String`. [3.8]
+28. For the `==` operator, auto-conversion is performed before the comparison. There're another strict comparison operator `===` which does not perform auto-conversion. [3.8.1]
+29. 
 
 
 
