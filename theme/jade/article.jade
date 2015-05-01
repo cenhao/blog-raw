@@ -28,8 +28,8 @@ block content
         if article.tags:
           | : 
           for tag in article.tags
-            a(href="#{SITEURL}/tag/#{tag}.html")= tag
-            |  
+            a(href="#{SITEURL}/tag/#{tag|lower}.html")= tag
+            | &nbsp;&nbsp;
   section
     div#disqus_thread
     script(type="text/javascript").

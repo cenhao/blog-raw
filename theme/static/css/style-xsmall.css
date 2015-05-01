@@ -48,6 +48,10 @@ ul.actions.small li:first-child {
 	display: none;
 }
 
+header.major h2 {
+	line-height: 100%;
+}
+
 /* Footer */
 
 #footer .copyright li {
