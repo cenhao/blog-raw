@@ -1,6 +1,7 @@
 Title: First Blood
 Tags: blog, web
 Slug: first-blood
+Date: 2014-12-25 16:00
 
 ##**Finally have my blog set up!**
 

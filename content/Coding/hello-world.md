@@ -1,6 +1,7 @@
 Title: Hello world!
 Tag: code
 Slug: hello-world
+Date: 2014-12-26 01:00
 Summary: Please ignore this test post
 
 **This post is for testing only!**

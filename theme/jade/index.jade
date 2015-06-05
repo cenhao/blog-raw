@@ -6,7 +6,7 @@ block content
       header.major
         h2
           a(href="#{SITEURL}/#{article.url}")= article.title
-      p.time #{article.locale_date}
+      p.time #{article.date|strftime('%a %d %b %Y')}
       br
       br
       != article.summary

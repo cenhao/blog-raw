@@ -1,6 +1,7 @@
 Title: New Year Resolution
 Slug: new-year-resolution
 Tags: blog
+Date: 2014-12-31 23:00
 
 As the new year is coming, it's time to make a new year resolution(as always). But the difference this time is that I'm going to write down a blog on it.
 

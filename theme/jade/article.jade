@@ -10,7 +10,7 @@ block content
   section
     header.major
       h2= article.title
-    p.time #{article.locale_date}
+    p.time #{article.date|strftime('%a %d %b %Y')}
     br
     br
     #{article.content}

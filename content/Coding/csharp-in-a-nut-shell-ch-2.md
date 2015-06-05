@@ -1,6 +1,7 @@
 Title: Reading Notes on C# 5.0 in a Nutshell Ch.2
 Tags: Reading-Notes, Code, C#
 Slug: csharp-in-a-nutshell-ch-2
+Date: 2015-06-05 00:17
 
 ###To be honest, I was a little reluctant to use C\# at the begining.
 
