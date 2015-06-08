@@ -3,9 +3,9 @@ Tags: Reading-Notes, Code, C#
 Slug: csharp-in-a-nutshell-ch-2
 Date: 2015-06-05 00:17
 
-###To be honest, I was a little reluctant to use C\# at the begining.
+###To be honest, I was a little reluctant to use C\# at the beginning.
 
-But work is work after all, I cannot escape it. After using it for some time, I found C# to be a very powerful language and decided to learn it thoroughtly. I used to write reading note when I read books. And to make to notes more consistent and avoid changing the pattern every now and then, I'm making the commond rules for my notes:
+But work is work after all, I cannot escape it. After using it for some time, I found C# to be a very powerful language and decided to learn it thoroughly. I used to write reading note when I read books. And to make to notes more consistent and avoid changing the pattern every now and then, I'm making the common rules for my notes:
 
 - <font color="#DA1D1B">Red</font> means this is important.
 	- Inside <font color="#DA1D1B">red</font> region, <u>underline</u> could be use to stress even higher importance.
@@ -29,13 +29,13 @@ OK, Though it is going to be boring, reading notes incoming!
 
 7. *Implicit* conversion happens automatically, if
 	- The conversion is guaranteed by the compiler that it will succeed.
-	- No information is lot in converion
+	- No information is lot in conversion
 	
 8. *Explicit* conversion may lost information and requires a *cast*. To perform a *cast*, the conversion between the two types must be possible. (p18)
 	
 9. A always fail conversion will be rejected by the compiler. (p18)
 
-10. C# type catagories: *value*, *reference*, *generic type parameters*, *pointer*. (p19)
+10. C# type categories: *value*, *reference*, *generic type parameters*, *pointer*. (p19)
 
 11. *Value types* comprise most built-in types and custom **struct** and **enum** type. Its content is somply a value. (p19)
 
@@ -47,7 +47,7 @@ OK, Though it is going to be boring, reading notes incoming!
 
 15. **null** can be assigned to a reference, but not a value type. (p21)
 
-16. *Value type* resembles c++'s **struct** or **class**, which has memory alignment and occupies approximatley the same size of memory of the fields. (p21)
+16. *Value type* resembles **struct** or **class** in C++, which has memory alignment and occupies approximately the same size of memory of the fields. (p21)
 
 17. *Reference type* requires separate allocations of memory for the reference of the object. It take as many bytes as *value type* to store its field, and has an extra administrative overhead for storing some metadata. Each reference will require extra bytes for pointing the data. (p22)
 
@@ -55,7 +55,7 @@ OK, Though it is going to be boring, reading notes incoming!
 
 19. Of the *integral* types, **int** and **long** are favored by C# and runtime. Other integral types are more for space efficiency purpose. (p23)
 
-20. For numeric literals, *numeric suffix* can be used to explictly define the type. E.g `1.0F`, `1U`, `1L` <font color="#DA1D1B">(upper case is preferred)</font>. (p24)
+20. For numeric literals, *numeric suffix* can be used to explicitly define the type. E.g. `1.0F`, `1U`, `1L` <font color="#DA1D1B">(upper case is preferred)</font>. (p24)
 
 21. Sometimes *numeric suffix* is mandatory for initializing or assigning value to certain numeric types. For example:
 
@@ -71,17 +71,17 @@ OK, Though it is going to be boring, reading notes incoming!
 
 22. 8-bit and 16-bit numeric type do not support arithmetic operations (+, -, *, /, %). (p26)
 
-23. Arithmetic operation on integral type can overflow sliently. **checked** can be used to enforce a checking on overflow. But operations at compile time are always checked. (p27)
+23. Arithmetic operation on integral type can overflow silently. **checked** can be used to enforce a checking on overflow. But operations at compile time are always checked. (p27)
 
-24. C#'s **char** represents a Unicode character and occupies 2 bytes. **char** literals live inside single quote. (p32)
+24. **char** in C# represents a Unicode character and occupies 2 bytes. **char** literals live inside single quote. (p32)
 
-25. **char** can be converted to *numeric types* that can accommodate an unsigh **short**. (p33)
+25. **char** can be converted to *numeric types* that can accommodate an unsighed **short**. (p33)
 
 26. `@` can be used to turn off escape. Remember it can also stop *identifiers* being interpreted as *keyword*. (p33)
 
-27. `@` can also be used for defining multiline string literals. Like \`\`\` in python. (p34)
+27. `@` can also be used for defining multi-line string literals. Like \`\`\` in python. (p34)
 
-28. `+` can be used to concatenation **string**s, however as **string**s are immutable, this is not efficent. A better solution would be to use **StringBuilder**. (p34)
+28. `+` can be used to concatenation **string**s, however as **string**s are immutable, this is not efficient. A better solution would be to use **StringBuilder**. (p34)
 
 29. Unlike C++, **string**s in C# can't be compared by using &gt; or &lt;. The **CompareTo** function is needed. (p34)
 
@@ -105,7 +105,7 @@ OK, Though it is going to be boring, reading notes incoming!
 
 	(p36)
 
-33. *Jagged array*s are declared using successive square brackets to represent each dimension.
+33. *Jagged arrays* are declared using successive square brackets to represent each dimension.
 
 		:::C#
 		int matrix[][] = new int[3][];
@@ -146,7 +146,7 @@ OK, Though it is going to be boring, reading notes incoming!
 
 45. For parameters, *madatory* parameters come first, *optional* parameters come second, and **params** parameter come last. (p45)
 
-46. By default arguments are identified by position. However *named argument* can be use to change the way arguements are identified, put the name of the parameter followed by a semicolon before the argument like this:
+46. By default arguments are identified by position. However *named argument* can be use to change the way arguments are identified, put the name of the parameter followed by a semicolon before the argument like this:
 
 		:::C#
 		void func(int x, int y);
@@ -185,7 +185,7 @@ OK, Though it is going to be boring, reading notes incoming!
 
 55. Namespace declaration can repeated or even in different assemblies, as long as the type names within the namespaces don’t conflict. (p61)
 
-56. Instead of importing a namespace, it's possble to give an *alias* to a namespace or the type within it to get rid of name conflict problem.
+56. Instead of importing a namespace, it's possible to give an *alias* to a namespace or the type within it to get rid of name conflict problem.
 
 		:::C#
 		using NS = NS1.NS2.NS3;
