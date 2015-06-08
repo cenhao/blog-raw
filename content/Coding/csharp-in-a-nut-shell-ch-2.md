@@ -59,10 +59,12 @@ OK, Though it is going to be boring, reading notes incoming!
 
 21. Sometimes *numeric suffix* is mandatory for initializing or assigning value to certain numeric types. For example:
 
+		:::C#
 		float f = 1.0;
 
 	will fail, according to C#'s implicit type conversion rule. The correct way to do it:
 
+		:::C#
 		float f = 1.0F;
 
 	(p25)
@@ -89,11 +91,13 @@ OK, Though it is going to be boring, reading notes incoming!
 
 32. To define *retangular array*s, put commas to separate each dimension. Like:
 
+		:::C#
 		int matrix[,] = new int[2,3];
 		char cube[,,] = new char[4,3,5];
 
 	To get the length of each dimension, use **GetLength** with the corresponding index:
 
+		:::C#
 		char cube[,,] = new char[5,3,4];
 		int len0 = cube.GetLength(0); // 5
 		int len1 = cube.GetLength(1); // 3
@@ -103,10 +107,12 @@ OK, Though it is going to be boring, reading notes incoming!
 
 33. *Jagged array*s are declared using successive square brackets to represent each dimension.
 
+		:::C#
 		int matrix[][] = new int[3][];
 
 	Each inner array is implicitly initialized to **null** rather than an empty array. Each inner array must be created manually:
 
+		:::C#
 		for (int i = 0; i < matrix.Length; i++)
 		{
 			matrix[i] = new int[3];
@@ -142,6 +148,7 @@ OK, Though it is going to be boring, reading notes incoming!
 
 46. By default arguments are identified by position. However *named argument* can be use to change the way arguements are identified, put the name of the parameter followed by a semicolon before the argument like this:
 
+		:::C#
 		void func(int x, int y);
 		func(y:1, x:2);
 
@@ -151,6 +158,7 @@ OK, Though it is going to be boring, reading notes incoming!
 
 48. A variable's scope extends in both direction in both direction, meaning the code like this is not legal:
 
+		:::C#
 		{
 			{
 				int x;
@@ -179,6 +187,7 @@ OK, Though it is going to be boring, reading notes incoming!
 
 56. Instead of importing a namespace, it's possble to give an *alias* to a namespace or the type within it to get rid of name conflict problem.
 
+		:::C#
 		using NS = NS1.NS2.NS3;
 		using SomeType = NS1.NS2.SomeType;
 	(p62)
@@ -187,4 +196,5 @@ OK, Though it is going to be boring, reading notes incoming!
 
 58. To refer to the *global* namespace, use the **global** keyword. However the `::` token is needed to qualify:
 
+		:::C#
 		var a = new global::NS.SomeType();
