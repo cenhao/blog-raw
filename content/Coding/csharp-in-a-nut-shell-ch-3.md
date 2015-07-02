@@ -283,7 +283,7 @@ Date: 2015-07-01 23:22
 
 83. **static** data is unique for each closed type. (p113)
 
-84. Given a *base* class and a *derived* class, **X** is *convariant* if **X<derived>** is convertible to **X<base>**. **Y** is *contravariant* if **Y<base>** is convertible to **Y<derived>**. By default those conversion is illegal and will result in compile time error. (p115)
+84. Given a *base* class and a *derived* class, **X** is *convariant* if **X&lt;derived&gt;** is convertible to **X&lt;base&gt;**. **Y** is *contravariant* if **Y&lt;base&gt;** is convertible to **Y&lt;derived&gt;**. By default those conversion is illegal and will result in compile time error. (p115)
 
 85. Arrays are covariant. (p116)
 
