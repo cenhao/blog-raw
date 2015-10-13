@@ -129,9 +129,9 @@ Date: 2015-07-01 23:22
 
 41. The **base** keyword is like the **this** keyword, it serves two essential purposes: to access the overridden method in base class, and to call base class constructor. (pp86)
 
-42. Unlike C++, subclass in C# must declare its own constructors. (p87)
+42. Constructors are not (can not) be *inherited*. (p87)
 
-43. If a constructor in subclass omits the **base** keyword to call its base class' constructor, the parameterless constructor in base class is called implicitly. If the base class has no parameterless constructor, an error will occur at compile time. (p87)
+43. If a constructor in subclass omits the **base** keyword to call its base class' constructor, <font color="#DA1D1B">the parameterless constructor in base class is called implicitly</font>. If the base class has no parameterless constructor, an error will occur at compile time. (p87)
 
 44. Order of constructor and field initialization: subclass fields -> base class constructor parameters -> base class field -> base class constructor -> subclass constructor. (p88)
 
